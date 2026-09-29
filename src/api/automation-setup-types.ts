@@ -56,6 +56,7 @@ export interface AutomationSetupDraft {
   prompt: string;
   kind: AutomationSetupKind;
   plugins?: string[];
+  editingAutomationId?: string;
   form?: AutomationSetupFormPatch;
   fieldMetadata?: Partial<
     Record<AutomationSetupField, AutomationSetupFieldMetadata>
